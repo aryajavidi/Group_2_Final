@@ -55,6 +55,8 @@ Of these listed variables, we have decided to use a select few to analyize the d
 * 
 * 
 
+We dropped variables from the dataset because we felt that they did not have a significant impact on our goal and results. Variables such as, "name" and "description" would be difficult for our machine learning model to draw conclusions from. Names such as "BEST HOLLYWOOD LOCATION!!!" and "Spacious Room up to 8 Guests" provide us with the same information that variables such as 'beds' or 'city' could.
+
 ## The questions that the team plans to answer with the project (20 points)
 
 * “Does the number of people an air bnb accommodates affect its price”
