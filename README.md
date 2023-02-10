@@ -93,6 +93,6 @@ For our second analysis of our dataset, we decided to use only three variables t
 
 * “What is the predicted price of an Air BnB in New York City?”
 
-* "What is the precited price of an Air BnB based on the th enumber of bedrooms"
+* "What is the precited price of an Air BnB based on the the enumber of bedrooms"
 
 * "what is the predicted price of an Air BnB that accommodates two"
