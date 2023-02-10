@@ -1,4 +1,4 @@
-# Group_2_Final
+# Group_2_Final - Predicting AirBnB Rental Prices based on accomodations. 
 
 
 ## The selected topic and the reasoning for that selection 
