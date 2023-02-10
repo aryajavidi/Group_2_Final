@@ -10,7 +10,7 @@ Group two consists of Jessica Cobb, Ranil Basnayake, Zach Otto, and Arya Javidi.
 
 The data we are working with was retrieved from Kaggle from the [following link](https://www.kaggle.com/datasets/rudymizrahi/airbnb-listings-in-major-us-cities-deloitte-ml/).
 
-The data was provided as a part of the Deloitte Machine Learning Competition. The data was provided in CSV format. There are 74,112 rows and 29 columns, which we have reduced to ___ columns after determining which variables would be most pertinent to our machine learning model and analysis.
+The data was provided as a part of the Deloitte Machine Learning Competition. The data was provided in CSV format. There are 74,112 rows and 29 columns, which we have reduced to 7 columns after determining which variables would be most pertinent to our machine learning model and analysis.
 
 ### The dataset originally contained the following variables: 
 * id
@@ -46,12 +46,13 @@ The data was provided as a part of the Deloitte Machine Learning Competition. Th
 
 ### The variables we have decided to analyze are 
 
-* 
-* 
-* 
-* 
-* 
-* 
+* log_price
+* room_type
+* accommodates
+* neighbourhood
+* zipcode
+* bedrooms
+* bathrooms
 
 We dropped variables from the dataset because we felt that they did not have a significant impact on our goal and results. Variables such as, "name" and "description" would be difficult for our machine learning model to draw conclusions from. Names such as "BEST HOLLYWOOD LOCATION!!!" and "Spacious Room up to 8 Guests" provide us with the same information that variables such as 'beds' or 'city' could.
 
