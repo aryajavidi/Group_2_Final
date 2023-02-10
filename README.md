@@ -44,8 +44,6 @@ The data was provided as a part of the Deloitte Machine Learning Competition. Th
 * Name
 * thumbnail_url
 
-Of these listed variables, we have decided to use a select few to analyize the dataset and apply the data to our machine learning process. 
-
 ### The variables we have decided to analyze are 
 
 * 
