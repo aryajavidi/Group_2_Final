@@ -62,3 +62,7 @@ We dropped variables from the dataset because we felt that they did not have a s
 * “What city is the most expensive to rent an Air BnB in on average?”
 
 * “What is the predicted price of an Air BnB in New York City?”
+
+* "What is the precited price of an Air BnB based on the th enumber of bedrooms"
+
+* "what is the predicted price of an Air BnB that accommodates two"
