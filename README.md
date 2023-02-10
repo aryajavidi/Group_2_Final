@@ -3,7 +3,7 @@
 
 ## The selected topic and the reasoning for that selection (20 points)
 
-Group two consists of Jessica Cobb, Ranil Basnayake, Zach Otto, and Arya Javidi. The topic we have chosen to analyze is AirBnB data. We plan to use the machine learning model, _____, to predict the prices of AirBnB rentals in different cities based on property type, number of people it can accommodate, number of bedrooms and bathrooms, and the city in which it is located. The locations that we aim to predict the price of Airbnb listings in are six major cities in US: New York city, Los Angeles,  San Francisco, Washington DC, Chicago, and Boston.
+Group two consists of Jessica Cobb, Ranil Basnayake, Zach Otto, and Arya Javidi. The topic we have chosen to analyze is AirBnB data. We plan to use machine learning to predict the prices of AirBnB rentals in different cities based on property type, number of people it can accommodate, number of bedrooms and bathrooms, and the city in which it is located. The locations that we aim to predict the price of Airbnb listings in are six major cities in US: New York city, Los Angeles,  San Francisco, Washington DC, Chicago, and Boston.
 
 
 ## A description of the data (20 points)
