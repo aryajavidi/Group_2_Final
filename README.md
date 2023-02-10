@@ -96,3 +96,18 @@ For our second analysis of our dataset, we decided to use only three variables t
 * "What is the precited price of an Air BnB based on the the enumber of bedrooms"
 
 * "what is the predicted price of an Air BnB that accommodates two"
+
+## Creation of two tables (so far) stored in database
+
+We decided to store our data in a postgres database:
+![tables](https://user-images.githubusercontent.com/112716673/217988081-7d084c0c-6135-4d55-b4e6-ec81abea5718.png)
+
+Here is the first able which is our mostly raw data (only url and description taken out):
+![image](https://user-images.githubusercontent.com/112716673/217988435-7e98bf27-6a91-4ecb-b58b-5744b584a612.png)
+
+And, here is our encoded data from NYC using only 6 features and one output column:
+![image](https://user-images.githubusercontent.com/112716673/217988566-fb707ba0-c928-431d-85ff-326675fd6ac5.png)
+
+
+
+
