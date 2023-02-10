@@ -55,6 +55,34 @@ The data was provided as a part of the Deloitte Machine Learning Competition. Th
 
 We dropped variables from the dataset because we felt that they did not have a significant impact on our goal and results. Variables such as, "name" and "description" would be difficult for our machine learning model to draw conclusions from. 
 
+From this data, we have made several tables to display these variables. The photos atattched below can be used as visuals of our dataset throughout the stages if its cleaning and preliminary analysis.
+
+### Original Dataset 
+
+![Dataset](https://user-images.githubusercontent.com/69175360/217972232-3676a107-e411-4de0-9bcd-b168f3e1d67c.JPG)
+
+### Data sorted by NYC only
+
+![Data sorted by nyc](https://user-images.githubusercontent.com/69175360/217972285-fdaeb068-1bac-452b-8d32-6f7c217c28eb.JPG)
+
+### Data sorted by NYC only with only the 6 variables being used for analysis present 
+
+![NYC sorted and dropped](https://user-images.githubusercontent.com/69175360/217972345-e5724def-0c74-4251-9c4e-e619c5c12782.JPG)
+
+
+## Second Analysis of dataset
+
+For our second analysis of our dataset, we decided to use only three variables to apply to our machine learning model. The three variables chosen were 'accommodates',	'bathrooms', and	'location'. Atattched below are visuals of the tables created to display this dataset. This dataset was run through our machine learning model to train the model and check accuracy. 
+
+### Cleaned Dataset
+
+![3 variable table](https://user-images.githubusercontent.com/69175360/217973044-09d7f164-f34d-468c-8f75-f6d562469c7b.JPG)
+
+### Training the model and checking the accuracy
+
+![accuracy](https://user-images.githubusercontent.com/69175360/217973058-c90b5b7d-f435-4ef3-b541-6487c552dbe9.JPG)
+
+
 ## The questions that the team plans to answer with the project (20 points)
 
 * “Does the number of people an air bnb accommodates affect its price”
