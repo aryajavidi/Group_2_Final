@@ -12,7 +12,7 @@ We have chosen to analyze data regarding Air BnB prices and the variables that m
 
 The data we are working with was retrieved from Kaggle from the [following link](https://www.kaggle.com/datasets/rudymizrahi/airbnb-listings-in-major-us-cities-deloitte-ml/).
 
-The data was provided as a part of the Deloitte Machine Learning Competition. The data was provided in CSV format. There are 74,112 rows and 29 columns, which we have reduced to 6 columns after determining which variables would be most pertinent to our machine learning model and analysis.
+The data was provided as a part of the Deloitte Machine Learning Competition. The data was provided in CSV format. There are 74,112 rows and 29 columns, which we have reduced to 6 columns after determining which variables would be most pertinent to our machine learning model and analysis. The variables in this dataset describe the location, features, and host information for each properety. The properties have their prices described as log_price. 
 
 ### The dataset originally contained the following variables: 
 * id
@@ -63,18 +63,9 @@ From this data, we have made several tables to display these variables. The phot
 
 ![Dataset](https://user-images.githubusercontent.com/69175360/217972232-3676a107-e411-4de0-9bcd-b168f3e1d67c.JPG)
 
-### Data sorted by NYC only
+## First Analysis of dataset
 
-![Data sorted by nyc](https://user-images.githubusercontent.com/69175360/217972285-fdaeb068-1bac-452b-8d32-6f7c217c28eb.JPG)
-
-### Data sorted by NYC only with only the 6 variables being used for analysis present 
-
-![NYC sorted and dropped](https://user-images.githubusercontent.com/69175360/217972345-e5724def-0c74-4251-9c4e-e619c5c12782.JPG)
-
-
-## Second Analysis of dataset
-
-For our second analysis of our dataset, we decided to use only three variables to apply to our machine learning model. The three variables chosen were 'accommodates',	'bathrooms', and	'location'. Atattched below are visuals of the tables created to display this dataset. This dataset was run through our machine learning model to train the model and check accuracy. 
+For our first analysis of our dataset, we decided to use only three variables to apply to our machine learning model. The three variables chosen were 'accommodates',	'bathrooms', and	'location'. Atattched below are visuals of the tables created to display this dataset. This dataset was run through our machine learning model to train the model and check accuracy. 
 
 ### Cleaned Dataset
 
@@ -83,6 +74,43 @@ For our second analysis of our dataset, we decided to use only three variables t
 ### Training the model and checking the accuracy
 
 ![accuracy](https://user-images.githubusercontent.com/69175360/217973058-c90b5b7d-f435-4ef3-b541-6487c552dbe9.JPG)
+
+After training the model based on variables that we have chosen, we created a bar graph to display how the model weighs each variable. We then converted this data into a pie chart as well to display how much each variable was weighed in a more digestable way. (sorry the text is a little squished, working on a fix)
+
+![weight](https://user-images.githubusercontent.com/69175360/219526407-cc6c2e28-5787-4eae-a56a-0f0996266d8f.JPG)
+
+
+![pie](https://user-images.githubusercontent.com/69175360/219526630-e6c12ca6-acd6-47d6-bdea-b3513899b640.JPG)
+
+
+## Creation of two tables (so far) stored in database
+
+We decided to store our data in a postgres database:
+![tables](https://user-images.githubusercontent.com/112716673/217988081-7d084c0c-6135-4d55-b4e6-ec81abea5718.png)
+
+Here is the first table which is our mostly raw data (only url and description taken out):
+![image](https://user-images.githubusercontent.com/112716673/217988435-7e98bf27-6a91-4ecb-b58b-5744b584a612.png)
+
+And, here is our encoded data from NYC using only 6 features and one output column:
+![image](https://user-images.githubusercontent.com/112716673/217988566-fb707ba0-c928-431d-85ff-326675fd6ac5.png)
+
+
+### Addition of amenities column to our dataset 
+
+In at attempt to better understand what factors influence the price of airBnB listings, we decided to include the amenities column from the dataset. Amenities such as 'Wireless internet', 'Air condiitoning', 'Kitchen', and 'Heating' could all play key factors in the price of the airBnB. While location and number of acommodations remains the primary indicators for how expensive a listing will be, amenities can also play a big role in the price. 
+
+Below is a dataframe and corrosponding bar graph to display the most expensive amenities on average for a rental property in New York City. 
+
+![price of amentiies](https://user-images.githubusercontent.com/69175360/219525548-087e576f-336c-4646-9b6a-f0319b103bda.JPG)
+
+![amenities](https://user-images.githubusercontent.com/69175360/219525553-d4f18f85-0b73-4ecd-b2f1-7fa5a002d6cd.JPG)
+
+We have also included a graph to display the availability of different amenities in New York rentals. 
+
+![Availibility](https://user-images.githubusercontent.com/69175360/219525906-cb993027-ff5a-4c5f-a23a-2f06b60abf27.JPG)
+
+
+
 
 
 ## The questions that the team plans to answer with the project 
@@ -97,16 +125,11 @@ For our second analysis of our dataset, we decided to use only three variables t
 
 * "what is the predicted price of an Air BnB that accommodates two"
 
-## Creation of two tables (so far) stored in database
+### results
 
-We decided to store our data in a postgres database:
-![tables](https://user-images.githubusercontent.com/112716673/217988081-7d084c0c-6135-4d55-b4e6-ec81abea5718.png)
+Currently, our model can predict 
 
-Here is the first able which is our mostly raw data (only url and description taken out):
-![image](https://user-images.githubusercontent.com/112716673/217988435-7e98bf27-6a91-4ecb-b58b-5744b584a612.png)
 
-And, here is our encoded data from NYC using only 6 features and one output column:
-![image](https://user-images.githubusercontent.com/112716673/217988566-fb707ba0-c928-431d-85ff-326675fd6ac5.png)
 
 
 
