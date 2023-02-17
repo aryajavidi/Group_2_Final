@@ -112,6 +112,11 @@ We have also included a graph to display the availability of different amenities
 
 ![Availibility](https://user-images.githubusercontent.com/69175360/219525906-cb993027-ff5a-4c5f-a23a-2f06b60abf27.JPG)
 
+### Tableau Visualizations 
+
+We have also created several visuals to describe and analyze the data that we have collected using Tableau. You can find these visuals below. 
+
+![NYC Map Visual](https://user-images.githubusercontent.com/69175360/219531064-89e58c0e-7d53-4213-8a12-52f52bed58c4.png)
 
 
 
@@ -137,7 +142,6 @@ Our model has a Mean Squared Error of 0.1192. This value indicates that the mode
 Below you can see a visual depicting our model's predictions versus the true values of Log_Price. 
 
 ![results](https://user-images.githubusercontent.com/69175360/219529383-1faf509a-f8e7-4182-954a-1d26a56c03c6.JPG)
-
 
 
 
