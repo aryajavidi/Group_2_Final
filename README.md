@@ -86,12 +86,15 @@ After training the model based on variables that we have chosen, we created a ba
 ## Creation of two tables (so far) stored in database
 
 We decided to store our data in a postgres database:
+
 ![tables](https://user-images.githubusercontent.com/112716673/217988081-7d084c0c-6135-4d55-b4e6-ec81abea5718.png)
 
 Here is the first table which is our mostly raw data (only url and description taken out):
+
 ![image](https://user-images.githubusercontent.com/112716673/217988435-7e98bf27-6a91-4ecb-b58b-5744b584a612.png)
 
 And, here is our encoded data from NYC using only 6 features and one output column:
+
 ![image](https://user-images.githubusercontent.com/112716673/217988566-fb707ba0-c928-431d-85ff-326675fd6ac5.png)
 
 
@@ -127,7 +130,15 @@ We have also included a graph to display the availability of different amenities
 
 ### results
 
-Currently, our model can predict 
+Currently, our model can predict the log_price of an AirBnB with a Coefficient of Determination of 0.73. This indicates that 73.39% of the variation in the dependent variable is accounted for by the independent variables in the model. While we are still striving to make changes to our model and improve this value, we feel that this is an acceptable fit for our model. 
+
+Our model has a Mean Squared Error of 0.1192. This value indicates that the model has a better fit to the data, and the predicted values are closer to the actual values. On average, the predicted values of the log_price are off by the square root of 0.11921526993534758 from the actual values. We feel that this is an acceptable range for our model to determine prices effectively. 
+
+Below you can see a visual depicting our model's predictions versus the true values of Log_Price. 
+
+![results](https://user-images.githubusercontent.com/69175360/219529383-1faf509a-f8e7-4182-954a-1d26a56c03c6.JPG)
+
+
 
 
 
