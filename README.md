@@ -118,6 +118,7 @@ We have also created several visuals to describe and analyze the data that we ha
 
 ![NYC Map Visual](https://user-images.githubusercontent.com/69175360/219531064-89e58c0e-7d53-4213-8a12-52f52bed58c4.png)
 
+![newyork pic](https://user-images.githubusercontent.com/69175360/219532015-a3eb6eee-a887-4ebd-8a39-1153704dde37.JPG)
 
 
 
