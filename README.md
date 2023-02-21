@@ -8,6 +8,8 @@ Group two consists of Jessica Cobb, Ranil Basnayake, Zach Otto, and Arya Javidi.
 We have chosen to analyze data regarding Air BnB prices and the variables that may affect that price because short term rentals are becoming a more and more popular option for people that are traveling. Renting a private property is considered by some to be more safe, cost efficient, and fun. This upwards trend in business has led more renters and property owners to be interested in what properties they can visit and own and what the value of these locations should be. This model can help a renter decide if an AirBnB is fairly prices or may help a renter decide on a price to list their rental property. We also have a special interest in the industry as we have a few prospective buyers in our group as well.
 
 
+A Link to our presentation can be found [here](https://docs.google.com/presentation/d/14_f2t58X_Ch7xfNvNBw9JvORSmUic1HXzjBF5L6d0oE/edit#slide=id.p1)
+
 ## A description of the data 
 
 The data we are working with was retrieved from Kaggle from the [following link](https://www.kaggle.com/datasets/rudymizrahi/airbnb-listings-in-major-us-cities-deloitte-ml/).
