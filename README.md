@@ -5,7 +5,7 @@
 
 Group two consists of Jessica Cobb, Ranil Basnayake, Zach Otto, and Arya Javidi. The topic we have chosen to analyze is AirBnB data. We plan to use machine learning to predict the prices of AirBnB rentals in different cities based on property type, number of people it can accommodate, number of bedrooms and bathrooms, and the city in which it is located. 
 
-We have chosen to analyze data regarding Air BnB prices and the variables that may affect that price because short term rentals are becoming a more and more popular option for people that are traveling. Renting a private property is considered by some to be more safe, cost efficient, and fun. This upwards trend in business has led more renters and property owners to be interested in the value of these properties. This model can help a renter decide if an AirBnB is fairly priced or may help a new renter decide on a price to list their property. We also have a special interest in the industry as we have a few prospective buyers in our group as well!
+We have chosen to analyze data regarding Air BnB prices and the variables that may affect that price due to the increasing popularity of short-term rentals as a viable option for travelers. Renting a private property is considered by renters to be more safe, cost efficient, and fun. This upwards trend in business has led more renters and property owners to be interested in the value of these properties. This model can help a renter decide if an AirBnB is fairly priced or may help a new renter decide on a price to list their property. We also have a special interest in the industry as we have a few prospective buyers in our group as well!
 
 
 A Link to our presentation can be found [here](https://docs.google.com/presentation/d/14_f2t58X_Ch7xfNvNBw9JvORSmUic1HXzjBF5L6d0oE/edit#slide=id.p1)
@@ -30,11 +30,9 @@ The data is available for free from the following [Kaggle webpage](https://www.k
 This data was provided originally for the Deloitte Machine Learning Competition.
 There are 74,112 rows of data abd 28 columns including 27 features. Our target variable is the log_price of each listing.
 The 27 features include Cancellation Policy, Description, Host, Profile Pic, Host Response, Host Since, First Review, Last Review, Name, thumbnail_url, etc.
-We dropped variables from the dataset because we felt that they did not have a significant impact on our goal and results. Variables such as, "name" and "description" would be difficult for our machine learning model to draw conclusions from.
+We dropped variables from the dataset because we felt that they did not have a significant impact on our goal and results. Variables such as, "name" and "description" would be difficult for our machine learning model to draw conclusions from without the use of natural language processing which we felt was out of our scope for this project given the timeframe and our experience with the subject.
 
-We dropped some variables from the dataset because we felt that they did not have a significant impact on our goal and results. Variables such as, "name" and "description" would be difficult for our machine learning model to draw conclusions from without the use of natural language processing which we felt was out of our scope for this project given the timeframe and our experience with the subject.
-
-From this data, we have made several tables to display these variables. The photos atattched below can be used as visuals of our dataset throughout the stages if its cleaning and preliminary analysis.
+From this data, we have made several tables to display these variables. The photos atattched below can be used as visuals of our dataset throughout the stages of its cleaning and preliminary analysis.
 
 ### Original Dataset 
 
@@ -91,9 +89,9 @@ Here is our encoded data from NYC using only 6 features and one output column:
 
 ### Addition of amenities column to our dataset 
 
-In at attempt to better understand what factors influence the price of airBnB listings, we decided to include the amenities column from the dataset. Amenities such as 'Wireless internet', 'Air condiitoning', 'Kitchen', and 'Heating' could all play key factors in the price of the airBnB. While location and number of acommodations remains the primary indicators for how expensive a listing will be, amenities can also play a big role in the price. 
+In at attempt to better understand what factors influence the price of airBnB listings, we decided to include the amenities column from the dataset. Amenities such as 'Wireless internet', 'Air condiitoning', 'Kitchen', and 'Heating' could all play key factors in the price of the airBnB. While location and number of acommodations remain the primary indicators for how expensive a listing will be, amenities can also play a big role in the price. 
 
-Below is a dataframe and corrosponding bar graph to display the most expensive amenities on average for a rental property in New York City. 
+Below is a dataframe and corresponding bar graph displaying the most expensive amenities on average for a rental property in New York City. 
 
 #### Amenities and Availibilities of Features
 
@@ -102,8 +100,7 @@ Below is a dataframe and corrosponding bar graph to display the most expensive a
 
 ### Tableau Visualizations 
 
-Using Tableau, we created several visualizations that would help us display our data and analysis. We created several iterations of heatmaps in various forms to visualize the most expensive locations to rent an Airbnb in New York City based on the same features that we trained the meachine learning model on. 
-
+Using Tableau, we created several visualizations that would help us display our data and analysis. We created several iterations of heatmaps to visualize the most expensive locations for Airbnb rentals within NYC, applying the same features we used to train our machine learning model
 
 #### A collection of visualizations created from Tableau
 
@@ -111,7 +108,7 @@ Using Tableau, we created several visualizations that would help us display our 
 
 
 
-## results
+## Results
 
 Currently, our model can predict the log_price of an AirBnB with a Coefficient of Determination of 0.75. This indicates that 75% of the variation in the dependent variable is accounted for by the independent variables in the model. While we are still striving to make changes to our model and improve this value, we feel that this is an acceptable fit for our model. 
 
