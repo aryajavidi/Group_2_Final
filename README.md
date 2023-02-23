@@ -10,6 +10,19 @@ We have chosen to analyze data regarding Air BnB prices and the variables that m
 
 A Link to our presentation can be found [here](https://docs.google.com/presentation/d/14_f2t58X_Ch7xfNvNBw9JvORSmUic1HXzjBF5L6d0oE/edit#slide=id.p1)
 
+
+## The questions that the team plans to answer with the project 
+
+* “Are certain amenities more valuable in some cities versus others?”
+
+* “Which neighborhood in New York City is the most expensive to rent an Airbnb?”
+
+* “How does the average price of an Airbnb change based on city?” 
+
+* "Which factors influence the cost of an Airbnb the most?"
+
+* “What amenities drive up the price of an Airbnb?”
+
 ## A description of the data 
 
 The data is available for free from the following [Kaggle webpage](https://www.kaggle.com/datasets/rudymizrahi/airbnb-listings-in-major-us-cities-deloitte-ml). 
@@ -39,7 +52,7 @@ To begin, we had to choose a model that would work for us. We considered four di
 
 For our first analysis of our dataset, we decided to use only three variables to apply to our machine learning model. The three variables chosen were 'accommodates',	'bathrooms', and	'location'. 
 
-Atattched below are visuals of the tables created to display this dataset. This dataset was run through our machine learning model to train the model and determine accuracy. 
+Atattched below are visuals of the tables created to display this dataset. This dataset was run through our machine learning model to train the model and determine accuracy. We made many revisions to the model over the past few weeks changing which features we would train with and learning how to extract out each amenity in the amenities column to a new column with a True/False output depending. 
 
 After training the model on the chosen features, we created visualizations to display how the model weighs each feature when predicting the log_price. After training the model on New York and Los Angeles datasets, we created two pie charts to compare how certain amentieies may be weighed more or less depending on which city they were in.
 
@@ -61,7 +74,7 @@ After training the model on the chosen features, we created visualizations to di
 ![NYVSLA](https://user-images.githubusercontent.com/69175360/221027919-987978d2-8b69-432d-aa9f-393c3787c31c.JPG)
 
 
-## Creation of two tables (so far) stored in database
+#### Creation of two tables (so far) stored in database
 
 We decided to store our data in a postgres database:
 
@@ -71,7 +84,7 @@ Here is the first table which is our mostly raw data (only url and description t
 
 ![image](https://user-images.githubusercontent.com/112716673/217988435-7e98bf27-6a91-4ecb-b58b-5744b584a612.png)
 
-And, here is our encoded data from NYC using only 6 features and one output column:
+Here is our encoded data from NYC using only 6 features and one output column:
 
 ![image](https://user-images.githubusercontent.com/112716673/217988566-fb707ba0-c928-431d-85ff-326675fd6ac5.png)
 
@@ -98,21 +111,7 @@ Using Tableau, we created several visualizations that would help us display our 
 
 
 
-## The questions that the team plans to answer with the project 
-
-
-* “Which neighborhood in New York City is the most expensive to rent an Airbnb?”
-
-* “How does the average price of an Airbnb change based on city?” 
-
-* "Which factors influence the cost of an Airbnb the most?"
-
-* “What amenities drive up the price of an Airbnb?”
-
-* “Are certain amenities more valuable in some cities versus others?”
-
-
-### results
+## results
 
 Currently, our model can predict the log_price of an AirBnB with a Coefficient of Determination of 0.75. This indicates that 75% of the variation in the dependent variable is accounted for by the independent variables in the model. While we are still striving to make changes to our model and improve this value, we feel that this is an acceptable fit for our model. 
 
@@ -124,10 +123,44 @@ Below you can see a visual depicting our model's predictions versus the true val
 
 
 
+### Were we able to answer the questions that we seeked to answer at the beginning of the project?
+
+The first question we seeked to answer was “Are certain features more important in some cities versus others?”
+
+The answer is absolutely yes. Features such as room_type remained the most important feature in determining the cost of a rental property in both LA and NYC, however we saw differences in how the number of bedrooms and bathrooms were weighed between the two. Properties in New York City more heavily weighed the zipcode (location) over the number of people that the property could accomodiate. 
+
+We also analyzed the average price of rentals in both NYC and LA based on which specific amentities they had such as "TV", "Pool", or "BBQ".
+
+
+![NYVSLA](https://user-images.githubusercontent.com/69175360/221029610-2b1c4121-d73f-41c9-bc7f-66bf875716ec.JPG)
+
+![NYVSLAAMEN](https://user-images.githubusercontent.com/69175360/221029608-f3529332-7666-407c-8f9e-c030fe31cd73.JPG)
 
 
 
+We also seeked to understand more about which neighborhoods or areas in NYC would be the most or least expensive to rent a property in through Airbnb. We found that Bayside was the most expensive area to rent an Airbnb, while Bay ridge was the least expensive. 
 
+![newyork pic](https://user-images.githubusercontent.com/69175360/221029832-7b6686b6-7f78-48eb-a5b3-ed839dd01e1a.JPG)
+
+
+We also wanted to learn more about how the average price of an Airbnb changes based on which city it is located. We found that San Francisco was the most expensive city in our dataset on average for an Airbnb rental, with Chicago and New York City being the two lowest. 
+
+
+![city](https://user-images.githubusercontent.com/69175360/221030139-c841d38e-05e9-418e-b4bb-33db4eaca56c.JPG)
+
+Our fourth and fifth questions were "Which factors influence the cost of an Airbnb the most?" and “What amenities drive up the price of an Airbnb?” which we were able to answer after training our machine learning model on the dataset and identifying which factors were weighed the most when determining log_price. Based on our data, Room_type reigns supreme in determining the cost of an Airbnb. Examples of room types were, "Whole house, single room, etc." The most expensive amentities for Airbnb rentals included "Doorman", "indoor fireplace", and "Cable TV". 
+
+![fetaure importance](https://user-images.githubusercontent.com/69175360/221031003-59383267-4f91-416a-87e4-6335a905db47.JPG)
+
+## Recommendations for Future Analysis
+
+For future analysis, we recommend that the following features or procedures are added
+
+* Feature ranking with recursive feature elimination 
+
+* Natural language processing on reviews & descriptions 
+
+* Inclusion of other cities in the analysis, further comparisons of the amenities and prices based on city. 
 
 
 
