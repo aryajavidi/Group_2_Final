@@ -52,7 +52,7 @@ To begin, we had to choose a model that would work for us. We considered four di
 
 For our first analysis of our dataset, we decided to use only three variables to apply to our machine learning model. The three variables chosen were 'accommodates',	'bathrooms', and	'location'. 
 
-Atattched below are visuals of the tables created to display this dataset. This dataset was run through our machine learning model to train the model and determine accuracy. We made many revisions to the model over the past few weeks changing which features we would train with and learning how to extract out each amenity in the amenities column to a new column with a True/False output depending. 
+Atattched below are visuals of the tables created to display this dataset. This dataset was run through our machine learning model to train the model and determine accuracy. We made many revisions to the model over the past few weeks changing which features we would train with and learning how to extract out each amenity in the amenities column to a new column with a True/False output. 
 
 After training the model on the chosen features, we created visualizations to display how the model weighs each feature when predicting the log_price. After training the model on New York and Los Angeles datasets, we created two pie charts to compare how certain amentieies may be weighed more or less depending on which city they were in.
 
